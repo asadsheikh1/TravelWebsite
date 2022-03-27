@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/animate.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+<header class="header">
+        <nav class="animated slideInDown delay-2s" id="nav">
+            <a href=""><img src="assets/img/logowhite.png" class="brand-img"></a>
+            <a href=""><img src="assets/img/logoblack.png" class="brand-img-2"></a>
+            <div class="nav-ul main-list">
+            <ul class="nav-ul">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="flights.html" class="nav-link">Flights</a></li>
+                <li><a href="hotels.html" class="nav-link">Hotels</a></li>
+                <li><a href="guides.html" class="nav-link">Guides</a></li>
+                <li><a href="FAQ.html" class="nav-link">FAQ</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+                <div class="hamberger">
+                    <div class="line a"></div>
+                    <div class="line b"></div>
+                    <div class="line c"></div>
+                </div>
+            
+        </nav>
+        <div class="mobile animated fadeInDown">
+            <ul>
+                <!-- <div class=""><img src="images/cross.png" class="cross"></div> -->
+                <li><a href="index.html" class="wow slideInRight delay-1s list-mob">Home</a></li>
+                <li><a href="flights.html" class="wow slideInRight delay-2s list-mob">Flights</a></li>
+                <li><a href="hotels.html" class="wow slideInRight delay-3s list-mob">Hotels</a></li>
+                <li><a href="guides.html" class="wow slideInRight delay-4s list-mob">Guides</a></li>
+                <li><a href="FAQ.html" class="wow slideInRight delay-5s list-mob">FAQ</a></li>
+                <li><a href="contact.html" class="wow slideInRight delay-5s list-mob">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="section s1">
+		<div class="black-bg animated slideInRight delay-1s" id="bg-temp"></div>
+		<div class="white-bg" id="bg-temp-1"></div>
+		<div class="black-trans-bg"></div>
+		<img src="assets/img/booking.jpg" id="myVideo">
+         <div class="container">
+          	<div class="row">
+          		<div class="col-md-6">
+            		<div class="content">
+                		<h1 class="animated flipInY">Bookings..</h1>
+                		<p class="animated fadeInLeft delay-1s">Do not waste a second, enjoy every seond !</p>
+              		</div>
+             	</div>
+         	</div>
+          </div>
+	</section>
+	<section class="s4">
+		<div class="container">
+			<div class="row py-5">
+				<div class="col-md-12 text-center">
+					<div class="w3-bar w3-black">
+						<button class="bar-item w3-button" onclick="openCity('London')">One way</button>
+						<button class="bar-item w3-button" onclick="openCity('Paris')">Rounded-Trip</button>
+					  </div>
+					  <div id="London" class="city">
+						<form>
+							<input type="text" placeholder="From" class="form-2">
+							<input type="text" placeholder="To" class="form-2">
+							<div style="display: flex;flex-direction: row;justify-content: center;">
+								<div class="sp-div">
+									<h3>April 24 - May-3</h3>
+									<p>Wed -Thu</p>
+								</div>
+								<div class="sp-div">
+									<h3>1 Traveller</h3>
+									<p>Economy</p>
+								</div>
+								<div>
+									<input type="submit" value=" " class="form-2-submit">
+								</div>
+							</div>
+						</form>
+					  </div>
+					  
+					  <div id="Paris" class="city" style="display:none">
+						<form>
+							<input type="text" placeholder="From" class="form-2">
+							<input type="text" placeholder="To" class="form-2">
+							<div style="display: flex;flex-direction: row;justify-content: center;">
+								<div class="sp-div">
+									<h3>May 24 - Jun-3</h3>
+									<p>Wed -Thu</p>
+								</div>
+								<div class="sp-div">
+									<h3>3 Travellers</h3>
+									<p>Business</p>
+								</div>
+								<div>
+									<input type="submit" value=" " class="form-2-submit">
+								</div>
+							</div>
+						</form>
+					  </div>
+				</div>
+			</div>
+			<div class="row py-5">
+				<div class="col-md-12">
+					<h2 class="ml-4" style="color: rgb(161, 153, 153);">Polular destinations</h2>
+				</div>
+			</div>
+			<div class="row wow fadeIn delay-1s py-5" style="margin-right: auto;margin-left: auto;">
+				<div class="col-md-4">
+					  <div class="card" style="width: 18rem;">
+						  <img src="assets/img/destinations/athens.jpg" class="card-img-top" alt="...">
+						  <div class="card-body">
+							<h5 class="card-title">Athens</h5>
+							<p class="card-text">There aren't many places in the world that can claim as much historical...</p>
+						  </div>
+						  <ul class="list-group list-group-flush">
+							<li class="list-group-item">Greece</li>
+							<li class="list-group-item text-primary"><img src="assets/img/plane-ico.png" style="height: 15px;margin-right: 10px;">20/04-25/04 4-days</li>
+							<li class="list-group-item">$ 136</li>
+							<a href="payment.html">
+							  <li class=" btn-secondary list-group-item text-center" style="background-color: #333;text-decoration: none;" >BOOK NOW</li></li>
+							</a>
+						  </ul>
+						</div>
+				</div>
+				<div class="col-md-4">
+					  <div class="card" style="width: 18rem;">
+						  <img src="assets/img/destinations/keywest.jpg" class="card-img-top" alt="...">
+						  <div class="card-body">
+							<h5 class="card-title">Key West</h5>
+							<p class="card-text">If you love tropical sunshine, gourmet seafood, water sports,...</p>
+						  </div>
+						  <ul class="list-group list-group-flush">
+							<li class="list-group-item">Florida</li>
+							<li class="list-group-item text-primary"><img src="assets/img/plane-ico.png" style="height: 15px;margin-right: 10px;">20/04-25/04 4-days</li>
+							<li class="list-group-item">$ 212</li>
+							<a href="payment.html">
+							  <li class=" btn-secondary list-group-item text-center" style="background-color: #333;text-decoration: none;" >BOOK NOW</li></li>
+							</a>
+						  </ul>
+						</div>
+				</div>
+				  <div class="col-md-4">
+					  <div class="card" style="width: 18rem;">
+						  <img src="assets/img/destinations/saint-thomas.jpg" class="card-img-top" alt="...">
+						  <div class="card-body">
+							<h5 class="card-title">Saint Thomas</h5>
+							<p class="card-text">Travel passport-free to a paradise of beaches, seafood, snorkeling and..</p>
+						  </div>
+						  <ul class="list-group list-group-flush">
+							<li class="list-group-item">U.S.Virgin Islands</li>
+							<li class="list-group-item text-primary"><img src="assets/img/plane-ico.png" style="height: 15px;margin-right: 10px;">20/04-25/04 4-days</li>
+							<li class="list-group-item">$ 223</li>
+							<a href="payment.html">
+							  <li class=" btn-secondary list-group-item text-center" style="background-color: #333;text-decoration: none;" >BOOK NOW</li></li>
+							</a>
+						  </ul>
+						</div>
+				</div>
+		  </div>
+		  <div class="row py-5">
+			<div class="col-12">
+				<button type="button" class="collapsible" style="border: 1px solid rgb(153, 106, 106);">
+					<div style="display: flex;flex-direction: row;justify-content: space-between;">
+						<div>
+							<h5>London</h5>
+							<p class="text-info">Flight</p>
+						</div>
+						<div class="d-flex align-items-center">
+							<img src="assets/img/down-arrow.png" style="height: 40px;">
+						</div>
+					</div>
+				</button>
+				<div class="content1">
+					<ul style="margin-left: 0;">
+						<li><a href="payment.html">Flight New York - London (JFK - LGW)
+						$262+</a></li>
+						<li><a href="payment.html">Flight New York - London (EWR - LHR)
+						$293+</a></li>
+						<li><a href="payment.html">Flight San Francisco - London (SFO - LHR)
+						$293+</a></li>
+						<li><a href="payment.html">Flight New York - London (JFK - LHR)
+						$297+</a></li>
+						<li><a href="payment.html">Flight Miami - London (MIA - LHR)
+						$323+</a></li>
+						<li><a href="payment.html">Flight Orlando - London (MCO - LGW)
+						$323+</a></li>
+						<li><a href="payment.html">Flight Boston - London (BOS - LHR)
+						$330+</a></li>
+						<li><a href="payment.html">Flight New York - London (EWR - LGW)
+						$335+</a></li>
+						<li><a href="payment.html">Flight Chicago - London (ORD - LGW)
+						$377+</a></li>
+						<li><a href="payment.html">Flight Los Angeles - London (LAX - LGW)
+						$382+</a></li>
+						<li><a href="payment.html">Flight Orlando - London (MCO - LHR)
+						$391+</a></li>
+						<li><a href="payment.html">Flight Chicago - London (ORD - LHR)
+						$396+</a></li>
+						<li><a href="payment.html">Flight Los Angeles - London (LAX - LHR)
+						$399+</a></li>
+						<li><a href="payment.html">Flight New York - London (LGA - LHR)
+						$399+</a></li>
+					</ul>
+				</div>
+				
+				<button type="button" class="collapsible" style="border: 1px solid rgb(153, 106, 106);">
+					<div style="display: flex;flex-direction: row;justify-content: space-between;">
+						<div>
+							<h5>Paris</h5>
+							<p class="text-info">Flight</p>
+						</div>
+						<div class="d-flex align-items-center">
+							<img src="assets/img/down-arrow.png" style="height: 40px;">
+						</div>
+					</div>
+				</button>
+				<div class="content1">
+					<ul style="margin-left: 0;">
+						<li><a href="payment.html">Flight New York - Paris (JFK - LGW)
+						$262+</a></li>
+						<li><a href="payment.html">Flight New York - Paris (EWR - LHR)
+						$293+</a></li>
+						<li><a href="payment.html">Flight San Francisco - Paris (SFO - LHR)
+						$293+</a></li>
+						<li><a href="payment.html">Flight New York - Paris (JFK - LHR)
+						$297+</a></li>
+						<li><a href="payment.html">Flight Miami - Paris (MIA - LHR)
+						$323+</a></li>
+						<li><a href="payment.html">Flight Orlando - Paris (MCO - LGW)
+						$323+</a></li>
+						<li><a href="payment.html">Flight Boston - Paris (BOS - LHR)
+						$330+</a></li>
+						<li><a href="payment.html">Flight New York - Paris (EWR - LGW)
+						$335+</a></li>
+						<li><a href="payment.html">Flight Chicago - Paris (ORD - LGW)
+						$377+</a></li>
+						<li><a href="payment.html">Flight Los Angeles - Paris (LAX - LGW)
+						$382+</a></li>
+						<li><a href="payment.html">Flight Orlando - Paris (MCO - LHR)
+						$391+</a></li>
+						<li><a href="payment.html">Flight Chicago - Paris (ORD - LHR)
+						$396+</a></li>
+						<li><a href="payment.html">Flight Los Angeles - Paris (LAX - LHR)
+						$399+</a></li>
+						<li><a href="payment.html">Flight New York - Paris (LGA - LHR)
+						$399+</a></li>
+					</ul>
+				</div>
+				<button type="button" class="collapsible" style="border: 1px solid rgb(153, 106, 106);">
+					<div style="display: flex;flex-direction: row;justify-content: space-between;">
+						<div>
+							<h5>Atlanta</h5>
+							<p class="text-info">Flight</p>
+						</div>
+						<div class="d-flex align-items-center">
+							<img src="assets/img/down-arrow.png" style="height: 40px;">
+						</div>
+					</div>
+				</button>
+				<div class="content1">
+					<ul style="margin-left: 0;">
+						<li><a href="payment.html">Flight New York - Atlanta (JFK - LGW)
+						$262+</a></li>
+						<li><a href="payment.html">Flight New York - Atlanta (EWR - LHR)
+						$293+</a></li>
+						<li><a href="payment.html">Flight San Francisco - Atlanta (SFO - LHR)
+						$293+</a></li>
+						<li><a href="payment.html">Flight New York - Atlanta (JFK - LHR)
+						$297+</a></li>
+						<li><a href="payment.html">Flight Miami - Atlanta (MIA - LHR)
+						$323+</a></li>
+						<li><a href="payment.html">Flight Orlando - Atlanta (MCO - LGW)
+						$323+</a></li>
+						<li><a href="payment.html">Flight Boston - Atlanta (BOS - LHR)
+						$330+</a></li>
+						<li><a href="payment.html">Flight New York - Atlanta (EWR - LGW)
+						$335+</a></li>
+						<li><a href="payment.html">Flight Chicago - Atlanta (ORD - LGW)
+						$377+</a></li>
+						<li><a href="payment.html">Flight Los Angeles - Atlanta (LAX - LGW)
+						$382+</a></li>
+						<li><a href="payment.html">Flight Orlando - Atlanta (MCO - LHR)
+						$391+</a></li>
+						<li><a href="payment.html">Flight Chicago - Atlanta (ORD - LHR)
+						$396+</a></li>
+						<li><a href="payment.html">Flight Los Angeles - Atlanta (LAX - LHR)
+						$399+</a></li>
+						<li><a href="payment.html">Flight New York - Atlanta (LGA - LHR)
+						$399+</a></li>
+					</ul>
+				</div>
+				<button type="button" class="collapsible" style="border: 1px solid rgb(153, 106, 106);">
+					<div style="display: flex;flex-direction: row;justify-content: space-between;">
+						<div>
+							<h5>New York</h5>
+							<p class="text-info">Flight</p>
+						</div>
+						<div class="d-flex align-items-center">
+							<img src="assets/img/down-arrow.png" style="height: 40px;">
+						</div>
+					</div>
+				</button>
+				<div class="content1">
+					<ul style="margin-left: 0;">
+						<li><a href="payment.html">Flight New York - New York (JFK - LGW)
+						$262+</a></li>
+						<li><a href="payment.html">Flight New York - New York (EWR - LHR)
+						$293+</a></li>
+						<li><a href="payment.html">Flight San Francisco - New York (SFO - LHR)
+						$293+</a></li>
+						<li><a href="payment.html">Flight New York - New York (JFK - LHR)
+						$297+</a></li>
+						<li><a href="payment.html">Flight Miami - New York (MIA - LHR)
+						$323+</a></li>
+						<li><a href="payment.html">Flight Orlando - New York (MCO - LGW)
+						$323+</a></li>
+						<li><a href="payment.html">Flight Boston - New York (BOS - LHR)
+						$330+</a></li>
+						<li><a href="payment.html">Flight New York - New York (EWR - LGW)
+						$335+</a></li>
+						<li><a href="payment.html">Flight Chicago - New York (ORD - LGW)
+						$377+</a></li>
+						<li><a href="payment.html">Flight Los Angeles - New York (LAX - LGW)
+						$382+</a></li>
+						<li><a href="payment.html">Flight Orlando - New York (MCO - LHR)
+						$391+</a></li>
+						<li><a href="payment.html">Flight Chicago - New York (ORD - LHR)
+						$396+</a></li>
+						<li><a href="payment.html">Flight Los Angeles - New York (LAX - LHR)
+						$399+</a></li>
+						<li><a href="payment.html">Flight New York - New York (LGA - LHR)
+						$399+</a></li>
+					</ul>
+				</div>
+
+				<button type="button" class="collapsible" style="border: 1px solid rgb(153, 106, 106);">
+					<div style="display: flex;flex-direction: row;justify-content: space-between;">
+						<div>
+							<h5>Hawaii</h5>
+							<p class="text-info">Flight</p>
+						</div>
+						<div class="d-flex align-items-center">
+							<img src="assets/img/down-arrow.png" style="height: 40px;">
+						</div>
+					</div>
+				</button>
+				<div class="content1">
+					<ul style="margin-left: 0;">
+						<li><a href="payment.html">Flight New York - Hawaii (JFK - LGW)
+						$262+</a></li>
+						<li><a href="payment.html">Flight New York - Hawaii (EWR - LHR)
+						$293+</a></li>
+						<li><a href="payment.html">Flight San Francisco - Hawaii (SFO - LHR)
+						$293+</a></li>
+						<li><a href="payment.html">Flight New York - Hawaii (JFK - LHR)
+						$297+</a></li>
+						<li><a href="payment.html">Flight Miami - Hawaii (MIA - LHR)
+						$323+</a></li>
+						<li><a href="payment.html">Flight Orlando - Hawaii (MCO - LGW)
+						$323+</a></li>
+						<li><a href="payment.html">Flight Boston - Hawaii (BOS - LHR)
+						$330+</a></li>
+						<li><a href="payment.html">Flight New York - Hawaii (EWR - LGW)
+						$335+</a></li>
+						<li><a href="payment.html">Flight Chicago - Hawaii (ORD - LGW)
+						$377+</a></li>
+						<li><a href="payment.html">Flight Los Angeles - Hawaii (LAX - LGW)
+						$382+</a></li>
+						<li><a href="payment.html">Flight Orlando - Hawaii (MCO - LHR)
+						$391+</a></li>
+						<li><a href="payment.html">Flight Chicago - Hawaii (ORD - LHR)
+						$396+</a></li>
+						<li><a href="payment.html">Flight Los Angeles - Hawaii (LAX - LHR)
+						$399+</a></li>
+						<li><a href="payment.html">Flight New York - Hawaii (LGA - LHR)
+						$399+</a></li>
+					</ul>
+				</div>	
+				<button type="button" class="collapsible" style="border: 1px solid rgb(153, 106, 106);">
+					<div style="display: flex;flex-direction: row;justify-content: space-between;">
+						<div>
+							<h5>Las vegas</h5>
+							<p class="text-info">Flight</p>
+						</div>
+						<div class="d-flex align-items-center">
+							<img src="assets/img/down-arrow.png" style="height: 40px;">
+						</div>
+					</div>
+				</button>
+				<div class="content1">
+					<ul style="margin-left: 0;">
+						<li><a href="payment.html">Flight Chicago - Las Vegas (ORD - LAS)
+						$29+</a></li>
+						<li><a href="payment.html">Flight Portland - Las Vegas (PDX - LAS)
+						$29+</a></li>
+						<li><a href="payment.html">Flight Dallas - Las Vegas (DFW - LAS)
+						$31+</a></li>
+						<li><a href="payment.html">Flight Detroit - Las Vegas (DTW - LAS)
+						$33+</a></li>
+						<li><a href="payment.html">Flight Los Angeles - Las Vegas (LAX - LAS)
+						$39+</a></li>
+						<li><a href="payment.html">Flight Seattle - Las Vegas (SEA - LAS)
+						$43+</a></li>
+						<li><a href="payment.html">Flight Atlanta - Las Vegas (ATL - LAS)
+						$53+</a></li>
+						<li><a href="payment.html">Flight Orlando - Las Vegas (MCO - LAS)
+						$53+</a></li>
+						<li><a href="payment.html">Flight Houston - Las Vegas (HOU - LAS)
+						$54+</a></li>
+						<li><a href="payment.html">Flight Houston - Las Vegas (IAH - LAS)
+						$54+</a></li>
+						<li><a href="payment.html">Flight Philadelphia - Las Vegas (PHL - LAS)
+						$55+</a></li>
+						<li><a href="payment.html">Flight Baltimore - Las Vegas (BWI - LAS)
+						$64+</a></li>
+						<li><a href="payment.html">Flight Minneapolis - Las Vegas (MSP - LAS)
+						$74+</a></li>
+					</ul>
+				</div>
+		  	</div> 
+		</div>
+	</section>
+	<section>
+
+	</section>
+ <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script>
+$(document).ready(function () {
+    setTimeout(function(){
+        $('#bg-temp').addClass('opt-slow');
+        $('#bg-temp-1').addClass('opt-slow');
+    }, 4000);
+});
+</script>
+<script>
+	function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(cityName).style.display = "block";
+}
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content1 = this.nextElementSibling;
+    if (content1.style.display === "block") {
+      content1.style.display = "none";
+    } else {
+      content1.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+	feather.replace()
+  </script>
+ <script src="assets/js/main.js"></script>
+ <script type="">
+ 	$(document).ready(function(){
+  	$(window).scroll(function(){
+	 	if ($(window).scrollTop() > 600){
+		    $('.brand-img-2').addClass( "opt");
+		    $('.brand-img').addClass("displayoff");
+		    $('.nav-ul').addClass("displayoff");
+		    $('.line').addClass("black");
+		    $('.mobile').addClass("white");
+		    $('.list-mob').addClass("text-black");
+		}
+		else {
+    		$('.brand-img-2').removeClass( "opt");
+    		$('.brand-img').removeClass("displayoff");
+    		$('.nav-ul').removeClass("displayoff");
+    		$('.line').removeClass("black");
+    		$('.mobile').removeClass("white");
+    		$('.list-mob').removeClass("text-black");
+		}
+	});
+  });
+ </script>
+ <footer>
+	 <div class="container">
+		 <div class="row" style="min-height: 70vh;">
+			 <div class="col-md-2 pr-2 text-left">
+				<img src="assets/img/logowhite.png" class="footer-img mb-3">
+				 <p>We create possibilities for the connected world. Be Bold.</p>
+			 </div>
+			 <div class="col-md-2">
+				<ul>
+					<li>Explore</li>
+					<li><a href="">Home</a></li>
+					<li><a href="">Flights</a></li>
+					<li><a href="">Hotels</a></li>
+					<li><a href="">Guides</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			 </div>
+			 <div class="col-md-2">
+				 <ul>
+					 <li>Visit</li>
+					 <p>
+						Denko Co. Islamabad<br>
+						22nd Lane, Sector F-3<br>
+						Wales, Isb, PAK 72293
+					</p>
+				 </ul>
+				 <ul>
+					<li>New Business</li>
+					<p>
+						engage@traveldenco.com<br>
+						767-345-666
+				   </p>
+				</ul>
+			 </div>
+			 <div class="col-md-2">
+				 <ul>
+					 <li>Follow</li>
+					 <li><a href="">Instagram</a></li>
+					 <li><a href="">Twitter</a></li>
+					 <li><a href="">LinkedIn</a></li>
+				 </ul>
+			 </div>
+			 <div class="col-md-2">
+				<ul>
+					<li>Legal</li>
+					<li><a href="">Terms</a></li>
+					<li><a href="">Privacy</a></li>
+				</ul>
+			 </div>
+			 <div class="col-md-2 pt-3">
+				 <a href="contact.html" class="footer-btn">Next</a>
+			 </div>
+		 </div>
+	 </div>
+	 <div class="row ml-5">
+		 <p style="font-size: smaller;">© 2020 DENKO. All Rights Reserved.</p>
+	 </div>
+ </footer>
+</body>
+</html>
